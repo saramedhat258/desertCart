@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    background-color: hsl(12, 33%, 97%) !important;
+    font-family: "Red Hat Text", sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desert {
+    margin: 3% 0 0 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.desert .card {
+    border: none;
+    background-color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-img-top {
+    border-radius: 5%;
+    height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.addtocartbtn {
+    color: black;
+    font-weight: 700;
+    border: #C83B0E 1px solid;
+    border-radius: 30% !important;
+    position: absolute;
+    top: 62%;
+    left: 27%;
+    background-color: white;
+    padding: 3% 5%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addtocartbtn:hover {
+    color: hsl(14, 86%, 42%);
+}
+
+.addtocartbtn img {
+    background-color: white;
+    font-weight: 700;
+
+}
+
+.card-body {
+    padding: 10% 0 0 !important;
+}
+
+.name {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.category {
+    margin-bottom: 5px;
+}
+
+h6.card-title.price {
+    color: hsl(14, 86%, 42%);
+    font-size: 18px;
+}
+
+.clikedbtn {
+    background-color: #C83B0E;
+    border: #C83B0E 1px solid;
+    width: 50%;
+    height: 43px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 62%;
+    left: 27%;
+    padding: 3% 5%;
+}
+
+.clikedbtn p {
+    padding: 5%;
+}
+
+img.incre,
+img.decre {
+    padding: 5%;
+    display: inline-block;
+    cursor: pointer;
+    border: white solid 2px;
+
+}
+
+img.decre {
+    padding: 0.6rem 5%;
+}
+
+.clikedbtn p {
+    position: relative;
+    bottom: 0.4rem;
+    color: white;
+    font-weight: 500;
 }

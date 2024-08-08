@@ -1,0 +1,16 @@
+.alldeserts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+h1{
+    width: 100%;
+    margin: 5% 0 2% 2%;
+}
+@media(max-width:653px){
+    .alldeserts{
+        justify-content: space-around;
+    }
+}

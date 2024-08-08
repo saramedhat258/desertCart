@@ -1,0 +1,134 @@
+.modalpro {
+    width: 60%;
+    border-radius: 5%;
+    padding-top: 5%;
+}
+
+.modalpro img {
+    width: 35%;
+    height: 55px;
+}
+
+.name {
+    width: 70%;
+
+}
+
+.name span {
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides the overflow */
+    text-overflow: ellipsis;
+    padding-left: 0;
+}
+
+.priceq {
+    margin-top: 8%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.quntity {
+    color: #C83B0E;
+    font-weight: 600;
+}
+
+.price {
+    color: #C83B0E;
+    font-weight: 300;
+}
+
+.allpro hr {
+    width: 86%;
+    margin: auto;
+}
+
+.allpro {
+    background-color: #FCF8F5;
+    width: 90%;
+    border-radius: 5%;
+    margin: auto;
+}
+
+.totalprice {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.neworder {
+    width: 85%;
+    padding: 2%;
+    background-color: #C83B0E;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+
+.confirm {
+    width: 88%;
+}
+
+.confirm p {
+    color: gray;
+}
+
+
+@media(max-width:520px) {
+
+    .name,
+    .price,
+    .priceq,
+    .quntity {
+        font-size: 15px;
+    }
+
+    .totalprice {
+        font-size: 25px;
+    }
+    .price {
+        width: 50%;
+    }
+}
+
+@media(max-width:432px) {
+    .modalpro {
+        width: 65%;
+    }
+}
+
+@media(max-width:360px) {
+    .modalpro {
+        padding-right: 0;
+    }
+
+    .modalpro img {
+        width: 40%;
+        height: 2.5rem;
+    }
+
+    .priceq {
+        width: 25%;
+    }
+
+    .price {
+        width: 50%;
+    }
+    .name,
+    .price,
+    .priceq,
+    .quntity {
+        font-size: 13px;
+    }
+    .totalprice {
+        padding-left: 0;
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .totaltext {
+        font-size: 14px;
+        width: 70%;
+    }
+}

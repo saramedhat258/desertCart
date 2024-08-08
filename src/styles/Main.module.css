@@ -1,0 +1,17 @@
+@media(max-width:1050px){
+    .products{
+        width:100%;
+    }
+    .cart{
+        width: 75%;
+        margin: 0 0 2rem ;
+    }
+    .parent{
+        justify-content: space-around;
+    }
+}
+@media(max-width:573px){
+    .cart{
+        width: 90%;
+    }
+}
