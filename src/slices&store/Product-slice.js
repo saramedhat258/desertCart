@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchproduct=createAsyncThunk('productslice/fetchpro',
     async()=>{
-        const res=await fetch("http://localhost:9000/deserts");
+        const res=await fetch("https://sphenoid-sharp-thread.glitch.me/deserts");
         const data=await res.json();
         return data
     }
