@@ -10,16 +10,15 @@ function Desertcompnent(props) {
     const findproduct = cart.find(pro => pro.id === props.des.id)
     const [clicked, setclicked] = useState(!!findproduct)
     const [quantity, setquantity] = useState(findproduct ? findproduct.quantity : 1)
-
     useEffect(() => {
-        if (findproduct){
+        if (findproduct) {
             setclicked(true)
             setquantity(findproduct.quantity)
         }
-        else{
+        else {
             setclicked(false)
         }
-    },[findproduct])
+    }, [findproduct])
 
     const handleclick = (pro) => {
         dispatch(addtocart(pro))
@@ -48,7 +47,7 @@ function Desertcompnent(props) {
                         <p className='col-3'>{quantity}</p>
                         <img src={decreseicon} alt="" className='decre rounded-pill' onClick={() => handleDecrement()} />
                     </button>
-                    : <button className='addtocartbtn rounded-pill' onClick={() => handleclick(props.des)}><img src={carticon} alt="" className=''/> Add To Cart</button>
+                    : <button className='addtocartbtn rounded-pill' onClick={() => handleclick(props.des)}><img src={carticon} alt="" className='' /> Add To Cart</button>
                 }
                 <div className="card-body">
                     <p className="card-text name">{props.des.name}</p>

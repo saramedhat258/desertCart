@@ -3,8 +3,6 @@ import DesertList from './DesertList'
 import Cart from './Cart'
 function Main() {
 
-    /*understand it tommorow */
-
     return (
         <div className='containter-fluid'>
             <div className={`${styles.parent} row`}>
